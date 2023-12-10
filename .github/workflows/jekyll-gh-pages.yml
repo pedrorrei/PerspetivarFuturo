@@ -32,4 +32,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages  # The branch the action should deploy to.
-          folder: _site/html    # The folder where Jekyll has generated the site (change if necessary).
+          folder: _site/html/index.html   # The folder where Jekyll has generated the site (change if necessary).
