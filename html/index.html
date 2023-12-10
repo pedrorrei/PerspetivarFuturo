@@ -8,30 +8,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/navbar.css" />
     <title>Responsive Nevigation Menus in HTML CSS and JavaScript</title>
   </head>
   <body>
-    <header>
-      <a href="/html/Index.html" class="logo">Perspetivar Futuro</a>
-      <nav class="navbar">
-        <div class="btn">
-          <i class="fas fa-times close-btn"></i>
-        </div>
-        <a href="#" class="active">Página principal</a>
-        <a href="#">Equipa</a>
-        <a href="#">Manifesto</a>
-      </nav>
-      <div class="btn">
-        <i class="fas fa-bars menu-btn"></i>
-      </div>
-    </header>
-    <section>
-      <h2>Responsive Navbar</h2>
-    </section>
+    <nav class="navbar">
+      <span class="navbar-toggle navbar-toggler" id="js-navbar-toggle">
+          <span class="top-bar"></span>
+          <span class="middle-bar"></span>
+          <span class="bottom-bar"></span>
+      </span>
+      <a href="#" class="logo">Logo</a>
+      <ul class="main-nav" id="js-menu">
+          <li>
+              <a href="/html/index.html" class="nav-links">Página Principal</a>
+          </li>
+          <li>
+              <a href="/html/equipa.html" class="nav-links">Equipa</a>
+          </li>
+          <li>
+              <a href="/html/manifesto.html" class="nav-links">Manifesto</a>
+          </li>
+      </ul>
+  </nav>
+    
 
-    <script src="/js/index.js">
+    <script src="/js/index.js"></script>
+    <script src="/js/nav.js"></script>
+
+    
       
-    </script>
+    
   </body>
 </html>
