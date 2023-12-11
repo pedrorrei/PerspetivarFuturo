@@ -33,7 +33,7 @@ const teamMembers = [
     { name: "Miguel Martins", position: "Vice-Presidente", imageUrl: 'migueçmartins.jpg', sector: "CFJ" },
     { name: "Inês Filipe", position: "1.º Secretaria", imageUrl: 'inesfilipa.jpg', sector: "MAG" },
     { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" },
-    { name: "José Pontes", position: "3.º Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" },
+    { name: "José Pontes", position: "3.º Secretário", imageUrl: 'pontes.jpg', sector: "MAG" },
     { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "CFJ" },
     { name: "Tomás Oliveira", position: "Vogal", imageUrl: 'tomas.jpg', sector: "Desporto e Bem Estar" },
     { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "CFJ" },
