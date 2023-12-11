@@ -12,6 +12,13 @@
     <title>Lista A</title>
 </head>
 <style>
+
+
+.logo img {
+    max-height: 50px; /* Adjust this value based on your navbar's height */
+    width: auto; /* Maintain the aspect ratio of the logo */
+}
+
   .navbar-toggle {
       cursor: pointer;
       display: inline-block;
@@ -39,38 +46,34 @@
       transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Set the maximum height for the image within the carousel */
-  .max-height-carousel {
-  max-height: 400px; /* Adjust the maximum height as needed */
-  width: auto; /* Maintain aspect ratio */
+/* Set the maximum height for the image within the carousel */
+/* Targeting images within the carousel specifically */
+#carouselExampleCaptions .carousel-item img {
+    max-height: 650px; /* Adjust this value to decrease the height */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust the height automatically */
+    object-fit: cover; /* Cover the area, might crop the image */
 }
 
-/* Adjust the caption's position */
-   .carousel-caption {
-  bottom: 0;
-}
-
-
-.carousel-item img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the container without stretching */
-}
-
-  .container {
+.container {
     display: flex;
     justify-content: center; /* Centers the carousel horizontally */
     align-items: center; /* Centers the carousel vertically */
     flex-direction: column; /* Stacks items vertically */
-    max-width: 100%; /* Ensures container does not exceed the width of its parent */
-  }
+    width: 100%; /* Ensures container takes full width of the viewport */
+    margin: 0; /* Reset any default margin */
+    padding: 0; /* Reset any default padding */
+}
 
-  .carousel {
+.carousel {
     position: relative;
-    width: 100%; /* Sets the carousel to fill the width of its container */
-    max-width: 900px; /* Adjusts maximum width of the carousel as needed */
-    margin: auto; /* Ensures the carousel is centered within its container */
-  }
+    width: 100%; /* Ensures carousel takes full width of its container */
+}
+
+/* Ensure that each carousel item also takes full width */
+.carousel-item {
+    width: 100%;
+}
 
 
   .nav-links:hover {
@@ -128,14 +131,16 @@
 
 </style>
 
-<body>
-  <nav class="navbar">
+<body style="background-color: rgb(178, 178, 178);">
+    <nav class="navbar">
     <span class="navbar-toggle navbar-toggler" id="js-navbar-toggle">
         <span class="top-bar"></span>
         <span class="middle-bar"></span>
         <span class="bottom-bar"></span>
     </span>
-    <a href="#" class="logo">Logo</a>
+    <a href="/index.html" class="logo">
+        <img src="logo2.png" alt="Your Logo">
+    </a>
     <ul class="main-nav" id="js-menu">
         <li>
             <a href="/index.html" class="nav-links">Página Principal</a>

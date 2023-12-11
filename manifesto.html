@@ -13,6 +13,12 @@
     <title>Lista A - Manifesto</title>
 </head>
 <style>
+
+.logo img {
+    max-height: 50px; /* Adjust this value based on your navbar's height */
+    width: auto; /* Maintain the aspect ratio of the logo */
+}
+
 .navbar-toggle {
       cursor: pointer;
       display: inline-block;
@@ -128,6 +134,23 @@
 .card {
   max-width: 300px; /* Adjust the maximum width as needed */
   margin: auto; /* Center the cards within the column */
+  background-color: rgb(178, 178, 178); /* Set the background color */
+  
+  
+
+
+
+
+}
+
+.my-custom-card {
+  border: none;
+  box-shadow: none;
+  
+}
+.my-custom-button {
+    background-color: rgb(79, 185, 168) !important; /* Replace with your desired color */
+    border-color: whitesmoke !important; /* Optional: if you want a specific border color */
 }
 
 .carousel {
@@ -144,15 +167,16 @@
   }
 
   </style>
-<body>
+<body style="background-color: rgb(178, 178, 178);">
   <nav class="navbar">
     <span class="navbar-toggle navbar-toggler" id="js-navbar-toggle">
         <span class="top-bar"></span>
         <span class="middle-bar"></span>
         <span class="bottom-bar"></span>
     </span>
-    <a href="#" class="logo">Logo</a>
-    <ul class="main-nav" id="js-menu">
+    <a href="/index.html" class="logo">
+      <img src="logo2.png" alt="Your Logo">
+  </a>    <ul class="main-nav" id="js-menu">
         <li>
             <a href="/index.html" class="nav-links">Página Principal</a>
         </li>
@@ -169,21 +193,21 @@
 <section class="carousel-container">
   <div class="row col-md-6 col-lg-6">
       <div class="col-md-6 col-12">
-        <div class="card mb-3">
+        <div class="card my-custom-card card mb-3">
           <!-- <img class="card-img-top" src="path_to_portuguese_manifest_image.png" alt="Manifesto Portuguese Version"> -->
           <div class="card-body d-flex flex-column justify-content-center align-items-center">
             <h4 class="card-title">Manifesto[PT]</h4>
-            <a href="Manifesto - PT.pdf" class="btn btn-primary">Consultar Manifesto</a>
+            <a href="Manifesto - PT.pdf" class="btn btn-primary my-custom-button">Consultar Manifesto</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-12">
-        <div class="card mb-3">
+        <div class="card my-custom-card mb-3">
           <!-- <img class="card-img-top" src="path_to_english_manifest_image.png" alt="Manifesto English Version"> -->
           <div class="card-body d-flex flex-column justify-content-center align-items-center">
             <h4 class="card-title">Manifest[EN]</h4>
-            <a href="Manifesto - ENG.pdf" class="btn btn-primary">View Manifest</a>
+            <a href="Manifesto - ENG.pdf" class="btn btn-primary my-custom-button">View Manifest</a>
           </div>
         </div>
       </div>

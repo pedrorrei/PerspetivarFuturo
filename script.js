@@ -31,13 +31,13 @@ const teamMembers = [
     { name: "Matilde Pinho", position: "Vogal", imageUrl: 'matildepinho-1.jpg', sector: "Comunicação e Imagem" },
     { name: "Fábio Yu Chen", position: "Presidente", imageUrl: 'fabyo.jpg', sector: "CFJ" },
     { name: "Miguel Martins", position: "Vice-Presidente", imageUrl: 'migueçmartins.jpg', sector: "CFJ" },
-    { name: "Inês Filipe", position: "Secretaria", imageUrl: 'inesfilipa.jpg', sector: "MAG" },
-    { name: "Joaquim Esteves", position: "Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" },
-    { name: "José Pontes", position: "Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" },
+    { name: "Inês Filipe", position: "1.º Secretaria", imageUrl: 'inesfilipa.jpg', sector: "MAG" },
+    { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" },
+    { name: "José Pontes", position: "3.º Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" },
     { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "CFJ" },
     { name: "Tomás Oliveira", position: "Vogal", imageUrl: 'tomas.jpg', sector: "Desporto e Bem Estar" },
     { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "CFJ" },
-    { name: "Bruna Costa", position: "Relator", imageUrl: 'bruna.jpg', sector: "CFJ" },
+    { name: "Bruna Costa", position: "1.º Secretaria", imageUrl: 'bruna.jpg', sector: "CFJ" },
 
 
 
@@ -57,7 +57,7 @@ function filterSelection(sector) {
                 if (member.sector === sec) {
                     const cardHtml = `
                     <div class="col-sm-6 col-md-4 mb-4 d-inline">
-                        <div class="row d-flex justify-content-center justify-content-sm-between">
+                        <div class="row d-flex justify-content-center">
                             <div class="card w-75">
                                 <img src="${member.imageUrl}" class="card-img-top" alt="${member.name}">
                                 <div class="card-body">
@@ -78,12 +78,14 @@ function filterSelection(sector) {
         teamMembers.forEach(member => {
             if (member.sector === sector) {
                 const cardHtml = `
-                    <div class="col-12 col-md-4 mb-4">
-                        <div class="card">
+                    <div class=" col-sm-6 col-md-4 mb-4 d-inline">
+                    <div class="row d-flex justify-content-center">
+                        <div class="card w-75">
                             <img src="${member.imageUrl}" class="card-img-top" alt="${member.name}">
                             <div class="card-body">
                                 <h5 class="card-title">${member.name}</h5>
                                 <p class="card-text">${member.position}</p>
+                            </div>
                             </div>
                         </div>
                     </div>

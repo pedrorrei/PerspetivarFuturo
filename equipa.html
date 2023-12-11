@@ -13,6 +13,12 @@
     <title>Lista A- Equipa</title>
 </head>
 <style>
+
+.logo img {
+    max-height: 50px; /* Adjust this value based on your navbar's height */
+    width: auto; /* Maintain the aspect ratio of the logo */
+}
+
     .navbar-toggle {
       cursor: pointer;
       display: inline-block;
@@ -80,6 +86,23 @@
     text-decoration: none; /* Optional: Removes the underline effect on hover */
 }
 
+.card-body {
+    padding-top: 15px; /* Adjust this value as needed */
+    /* Other existing styles for .card-body */
+}
+
+
+.card {
+            background-color: rgb(178, 178, 178); /* Set the background color */
+            overflow: hidden;
+            /* Other existing styles for .card */
+        }
+
+   
+        .card-img-top {
+    margin-top: 15px; /* Adjust this value as needed */
+    /* Other existing styles for .card-img-top */
+}       
   /* Increased top margin for larger screens */
   @media screen and (min-width: 769px) {
   .logo {
@@ -127,15 +150,16 @@
 
 
 </style>
-<body>
-  <nav class="navbar">
+<body style="background-color: rgb(178, 178, 178);">
+    <nav class="navbar">
     <span class="navbar-toggle navbar-toggler" id="js-navbar-toggle">
         <span class="top-bar"></span>
         <span class="middle-bar"></span>
         <span class="bottom-bar"></span>
     </span>
-    <a href="#" class="logo">Logo</a>
-    <ul class="main-nav" id="js-menu">
+    <a href="/index.html" class="logo">
+        <img src="logo2.png" alt="Your Logo">
+    </a>    <ul class="main-nav" id="js-menu">
         <li>
             <a href="/index.html" class="nav-links">Página Principal</a>
         </li>
