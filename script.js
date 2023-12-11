@@ -28,7 +28,7 @@ const teamMembers = [
     { name: "Pedro Palavra", position: "Vogal", imageUrl: 'pedropalavra.jpg', sector: "Administração Interna", curso:"Licenciatura em Design", linkedin:"" },
     { name: "Gonçalo Marques", position: "Presidente", imageUrl: 'Goncalo.jpg', sector: "Mesa da Assembleia Geral", curso:"Mestrado em Engenharia Química- Processos Quimicos", linkedin:"" },
     { name: "Nânci Marques", position: "Vice-Presidente", imageUrl: 'magnanci.jpg', sector: "Mesa da Assembleia Geral", curso:"Mestrado em Engenharia Geológica" , linkedin:"https://www.linkedin.com/in/n%C3%A2nci-jesus/"},
-    { name: "Matilde Pinho", position: "Vogal", imageUrl: 'matildepinho-1.jpg', sector: "Comunicação e Imagem", curso:"Licenciatura em engenharia de materiais " , linkedin:""},
+    { name: "Matilde Pinho", position: "Vogal", imageUrl: 'matildepinho-1.jpg', sector: "Comunicação e Imagem", curso:"Licenciatura em Engenharia de Materiais " , linkedin:""},
     { name: "Fábio Yu Chen", position: "Presidente", imageUrl: 'fabyo.jpg', sector: "Conselho Fiscal e de Jurisdiçãol E Jurisdição", curso:"Mestrado em Engenharia Informática", linkedin:"" },
     { name: "Inês Filipe", position: "1.º Secretaria", imageUrl: 'inesfilipa.jpg', sector: "Mesa da Assembleia Geral", curso:"Licenciatura em Matemática ", linkedin:"" },
     { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "Mesa da Assembleia Geral" , curso:"Licenciatura em Fisioterapia ", linkedin:""},
