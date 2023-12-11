@@ -39,6 +39,18 @@
     .navbar-toggler.open .bottom-bar {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    @media screen and (min-width: 769px) {
+    .navbar-toggle {
+      display: none;
+    }
+  }
+  /* Padding for mobile screens */
+  @media screen and (max-width: 768px) {
+    .navbar-toggle {
+      display: inline-block;
+    }
+  }
   </style>
 <body>
   <nav class="navbar">
