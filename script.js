@@ -26,18 +26,17 @@ const teamMembers = [
     { name: "Leonardo Salazar", position: "Vogal", imageUrl: 'leo-1.jpg', sector: "Cultura", curso:"Licenciatura em Fisioterapia", linkedin:"" },
     { name: "Luzia Ferreira", position: "Vogal", imageUrl: 'luzia.jpg', sector: "Desporto e Bem Estar", curso:"Licenciatura em Engenharia e Gestão Industrial", linkedin:"" },
     { name: "Pedro Palavra", position: "Vogal", imageUrl: 'pedropalavra.jpg', sector: "Administração Interna", curso:"Licenciatura em Design", linkedin:"" },
-    { name: "Gonçalo Marques", position: "Presidente", imageUrl: 'Goncalo.jpg', sector: "MAG", curso:"Mestrado em Engenharia Química- Processos Quimicos", linkedin:"" },
-    { name: "Nânci Marques", position: "Vice-Presidente", imageUrl: 'magnanci.jpg', sector: "MAG", curso:"Mestrado em Engenharia Geológica" , linkedin:"https://www.linkedin.com/in/n%C3%A2nci-jesus/"},
+    { name: "Gonçalo Marques", position: "Presidente", imageUrl: 'Goncalo.jpg', sector: "Mesa da Assembleia Geral", curso:"Mestrado em Engenharia Química- Processos Quimicos", linkedin:"" },
+    { name: "Nânci Marques", position: "Vice-Presidente", imageUrl: 'magnanci.jpg', sector: "Mesa da Assembleia Geral", curso:"Mestrado em Engenharia Geológica" , linkedin:"https://www.linkedin.com/in/n%C3%A2nci-jesus/"},
     { name: "Matilde Pinho", position: "Vogal", imageUrl: 'matildepinho-1.jpg', sector: "Comunicação e Imagem", curso:"Licenciatura em engenharia de materiais " , linkedin:""},
-    { name: "Fábio Yu Chen", position: "Presidente", imageUrl: 'fabyo.jpg', sector: "CFJ", curso:"Mestrado em Ecotoxicologia e Análise de Risco", linkedin:"https://www.linkedin.com/in/f%C3%A1bio-c-a75a06b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app;" },
-    { name: "Miguel Martins", position: "Vice-Presidente", imageUrl: 'migueçmartins.jpg', sector: "CFJ", curso:"Mestrado em Engenharia Informática", linkedin:"" },
-    { name: "Inês Filipe", position: "1.º Secretaria", imageUrl: 'inesfilipa.jpg', sector: "MAG", curso:"Licenciatura em Matemática ", linkedin:"" },
-    { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" , curso:"Licenciatura em Fisioterapia ", linkedin:""},
-    { name: "José Pontes", position: "3.º Secretário", imageUrl: 'pontes.jpg', sector: "MAG", curso:"Mestrado Integrado em Engenharia Civil" , linkedin:""},
-    { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "CFJ" , curso:"Licenciatura em Engenharia do Ambiente", linkedin:""},
+    { name: "Fábio Yu Chen", position: "Presidente", imageUrl: 'fabyo.jpg', sector: "Conselho Fiscal e de Jurisdiçãol E Jurisdição", curso:"Mestrado em Engenharia Informática", linkedin:"" },
+    { name: "Inês Filipe", position: "1.º Secretaria", imageUrl: 'inesfilipa.jpg', sector: "Mesa da Assembleia Geral", curso:"Licenciatura em Matemática ", linkedin:"" },
+    { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "Mesa da Assembleia Geral" , curso:"Licenciatura em Fisioterapia ", linkedin:""},
+    { name: "José Pontes", position: "3.º Secretário", imageUrl: 'pontes.jpg', sector: "Mesa da Assembleia Geral", curso:"Mestrado Integrado em Engenharia Civil" , linkedin:""},
+    { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "Conselho Fiscal e de Jurisdição" , curso:"Licenciatura em Engenharia do Ambiente", linkedin:""},
     { name: "Tomás Oliveira", position: "Vogal", imageUrl: 'tomas.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Engenharia Química", linkedin:"" },
-    { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "CFJ", curso:"Licenciatura em Design de Produto e Tecnologia", linkedin:"" },
-    { name: "Bruna Costa", position: "1.º Secretaria", imageUrl: 'bruna.jpg', sector: "CFJ", curso: "Mestrado em Marketing (PL)", linkedin:"" },
+    { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "Conselho Fiscal e de Jurisdição", curso:"Licenciatura em Design de Produto e Tecnologia", linkedin:"" },
+    { name: "Bruna Costa", position: "1.º Secretaria", imageUrl: 'bruna.jpg', sector: "Conselho Fiscal e de Jurisdição", curso: "Mestrado em Marketing (PL)", linkedin:"" },
 
 
 
@@ -50,7 +49,7 @@ function filterSelection(sector) {
     container.innerHTML = '';
 
     if (sector === 'all') {
-        const sectors = ["Presidência", "Política Educativa", "Cultura", "Desporto e Bem Estar", "Administração Interna", "Aveiro é Nosso", "Apoio aos Núcleos", "Comunicação e Imagem",   "CFJ","MAG"];
+        const sectors = ["Presidência", "Política Educativa", "Cultura", "Desporto e Bem Estar", "Administração Interna", "Aveiro é Nosso", "Apoio aos Núcleos", "Comunicação e Imagem",   "Conselho Fiscal e de Jurisdição","Mesa da Assembleia Geral"];
         sectors.forEach(sec => {
             container.innerHTML += `<h2 class="text-center my-4">${sec}</h2>`;
             teamMembers.forEach(member => {
