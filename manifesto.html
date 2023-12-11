@@ -13,7 +13,7 @@
     <title>Lista A - Manifesto</title>
 </head>
 <style>
-   .navbar-toggle {
+.navbar-toggle {
       cursor: pointer;
       display: inline-block;
   }
@@ -79,6 +79,7 @@
     order: 1;
   }
 
+  
   .main-nav {
     order: 2;
     position: static;
@@ -102,6 +103,33 @@
   .navbar-toggle {
     display: none;
   }
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center; /* Centers the carousel horizontally */
+  align-items: center; /* Centers the carousel vertically */
+  flex-direction: column; /* Stacks items vertically */
+  max-width: 100%; /* Ensures container does not exceed the width of its parent */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+}
+
+/* Set a maximum width for the cards */
+.card {
+  max-width: 300px; /* Adjust the maximum width as needed */
+  margin: auto; /* Center the cards within the column */
+}
+
+.carousel {
+  position: relative;
+  width: 100%; /* Sets the carousel to fill the width of its container */
+  max-width: 900px; /* Adjusts maximum width of the carousel as needed */
+  margin: auto; /* Ensures the carousel is centered within its container */
 }
   /* Padding for mobile screens */
   @media screen and (max-width: 768px) {
@@ -133,8 +161,8 @@
 </nav>
 <br>
 <br>
-<section class="container">
-    <div class="row">
+<section class="carousel-container">
+  <div class="row col-md-6 col-lg-6">
       <div class="col-md-6 col-12">
         <div class="card mb-3">
           <!-- <img class="card-img-top" src="path_to_portuguese_manifest_image.png" alt="Manifesto Portuguese Version"> -->
