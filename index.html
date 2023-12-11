@@ -74,10 +74,34 @@
 
   /* Increased top margin for larger screens */
   @media screen and (min-width: 769px) {
-    .navbar-toggle {
-      display: none;
-    }
+  .logo {
+    order: 1;
   }
+
+  .main-nav {
+    order: 2;
+    position: static;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .nav-links {
+    padding: 14px 16px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
   /* Padding for mobile screens */
   @media screen and (max-width: 768px) {
     .navbar-toggle {

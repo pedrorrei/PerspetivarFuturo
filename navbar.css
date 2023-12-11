@@ -55,7 +55,7 @@ body {
 
 
 .logo {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 22px;
   order: 1; /* Position the logo first */
@@ -69,23 +69,24 @@ body {
 
 /* Adjusting the display of the main-nav for non-mobile view */
 @media screen and (min-width: 769px) {
+  .logo {
+   order: 1;
+  }
+
   .main-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    flex-grow: 1; /* Allows the navigation to expand and utilize the available space */
+    /* Resetting positioning properties if they were set for mobile view */
     position: static;
-    transform: translateX(0);
+    transform: none;
     opacity: 1;
     visibility: visible;
-    flex-direction: row;
-    width: auto;
-    height: auto;
     background-color: transparent;
   }
 
   .main-nav li {
-    display: inline-block; /* Display menu items inline */
-  }
-
-  .nav-links {
-    padding: 14px 16px;
+    display: inline-block;
   }
 
   .navbar-toggle {
