@@ -1,7 +1,7 @@
 const teamMembers = [
     { name: "Carolina Vila Maior", position: "Vice-Presidente", imageUrl: 'vilamaior.jpg', sector: "Política Educativa", curso:"Licenciatura em Biotecnologia", linkedin:"https://www.linkedin.com/in/carolinavilamaior?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
     { name: "Pedro Rei", position: "Vogal", imageUrl: 'rei.jpg', sector: "Política Educativa", curso:"Licenciatura em Engenharia Informática", linkedin:"https://www.linkedin.com/in/pedro-rei-208a3226a/"},
-    { name: "Bianca Ramos", position: "Vogal", imageUrl: 'bainca.jpg', sector: "Política Educativa" , curso:"Licenciatura em Contabilidade", linkedin:""},
+    { name: "Bianca Ramos", position: "Vogal", imageUrl: 'bainca.jpg', sector: "Política Educativa" , curso:"Licenciatura em Contabilidade", linkedin:"https://www.linkedin.com/in/biancaramos20/"},
     { name: "Wilson do Carmo", position: "Presidente", imageUrl: 'wison.jpg', sector: "Presidência", curso:"Mestrado em Ciências Biomédicas/Mestrado em Gestão", linkedin:"" },
     { name: "Margarida Cordeiro", position: "Vice-Presidente", imageUrl: 'Margarida Cordeiro.jpg', sector: "Aveiro é Nosso", curso:"Mestrado em Línguas e Relações Empresariais", linkedin:"" },
     { name: "Francisco Silveira", position: "Vice-Presidente", imageUrl: 'franciscosilveir-1.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Ciências do Mar e da Atmosfera", linkedin:"" },
