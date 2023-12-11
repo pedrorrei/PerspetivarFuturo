@@ -1,43 +1,43 @@
 const teamMembers = [
-    { name: "Carolina Vila Maior", position: "Vice-Presidente", imageUrl: 'vilamaior.jpg', sector: "Política Educativa", curso:"Licenciatura em Biotecnologia" },
-    { name: "Pedro Rei", position: "Vogal", imageUrl: 'rei.jpg', sector: "Política Educativa", curso:"Licenciatura em Engenharia Informática"},
-    { name: "Bianca Ramos", position: "Vogal", imageUrl: 'bainca.jpg', sector: "Política Educativa" , curso:"Licenciatura em Contabilidade"},
-    { name: "Wilson do Carmo", position: "Presidente", imageUrl: 'wison.jpg', sector: "Presidência", curso:"Mestrado em Ciências Biomédicas/Mestrado em Gestão" },
-    { name: "Margarida Cordeiro", position: "Vice-Presidente", imageUrl: 'Margarida Cordeiro.jpg', sector: "Aveiro é Nosso", curso:"Mestrado em Línguas e Relações Empresariais" },
-    { name: "Francisco Silveira", position: "Vice-Presidente", imageUrl: 'franciscosilveir-1.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Ciências do Mar e da Atmosfera" },
-    { name: "Joana Regadas", position: "Vice-Presidente Adjunta", imageUrl: 'regadas.jpg', sector: "Presidência", curso:"Mestrado em Engenharia Biomédica" },
-    { name: "Paulo Judite", position: "Tesoureiro", imageUrl: 'judite.jpg', sector: "Presidência", curso:"Mestrado em Economia" },
-    { name: "Pedro Cruz", position: "Vice-Presidente", imageUrl: 'pedrocruz___-1.jpg', sector: "Comunicação e Imagem", curso:"Mestrado em Audiovisual e Novos Média" },
-    { name: "João Cruz", position: "Tesoureiro Adjunto", imageUrl: 'joaocruz.jpg', sector: "Presidência" , curso:"Mestrado Integrado em Enganharia Mecânica"},
-    { name: "Gustavo Oliveira", position: "Secretário Geral", imageUrl: 'gustavo.jpg', sector: "Presidência", curso:"Mestrado em Assessoria de Direção e Comunicação nas Organizações" },
-    { name: "Carolina Alberto", position: "Administradora", imageUrl: 'carolinaalberto.jpg', sector: "Presidência", curso:"Mestrado em Engenharia Biomédica" },
-    { name: "Andreia Novais", position: "Vogal", imageUrl: 'Andreia Novais.jpg', sector: "Aveiro é Nosso", curso:"Mestrado em Gestão da Investigação Clínica" },
-    { name: "Guilherme Freitas", position: "Vice-Presidente", imageUrl: 'Guilherme Freitas.jpg', sector: "Apoio aos Núcleos", curso:"Mestrado em Engenharia Química" },
-    { name: "Maria Ferreira", position: "Vogal", imageUrl: 'Maria Ferreira.jpg', sector: "Apoio aos Núcleos", curso:"Mestrado em Gestão e Planeamento em Turismo" },
-    { name: "Lénia Ferreira", position: "Vogal", imageUrl: 'lenia.jpg', sector: "Apoio aos Núcleos", curso:"Mestrado em Ensino de Matemátia 3ºCEB e Secundário" },
-    { name: "Joana Ferreira", position: "Vogal", imageUrl: 'Joana Ferreira.jpg', sector: "Aveiro é Nosso", curso:"Licenciatura em Educação Básica" },
-    { name: "Joana Aleixo", position: "Vogal", imageUrl: 'joanaaleixo-1.jpg', sector: "Comunicação e Imagem", curso:"Administração Pública" },
-    { name: "Matilde Ferreira", position: "Vogal", imageUrl: 'matildepreto-1.jpg', sector: "Comunicação e Imagem", curso:"Licenciatura em Multimédia e Tecnologias da Comunicação" },
-    { name: "Lucas Matos", position: "Vice-Presidente", imageUrl: 'lucasmatos.jpg', sector: "Administração Interna" , curso:"Mestrado Integrado em Engenharia de Computadores e Telemática"},
-    { name: "Hugo Oliveira", position: "Vogal", imageUrl: 'hugooliveira.jpg', sector: "Administração Interna", curso:"Mestrado em Engenharia Mecânica" },
-    { name: "Juan Carpintero", position: "Vogal", imageUrl: 'juan.jpg', sector: "Administração Interna", curso:"Licenciatura em Engenharia de Computadores e Informática" },
-    { name: "Pedro Rocha", position: "Vice-Presidente", imageUrl: 'pedrorocha-1.jpg', sector: "Cultura" , curso:"Mestrado em Engenharia de Computadores e Telemática"},
-    { name: "Maria Ferreira", position: "Vogal", imageUrl: 'mariaferreira-1.jpg', sector: "Cultura", curso:"Licenciatura em Gestão" },
-    { name: "Leonardo Salazar", position: "Vogal", imageUrl: 'leo-1.jpg', sector: "Cultura", curso:"Liicenciatura em Fisioterapia" },
-    { name: "Luzia Ferreira", position: "Vogal", imageUrl: 'luzia.jpg', sector: "Desporto e Bem Estar", curso:"Licenciatura em Engenharia e Gestão Industrial" },
-    { name: "Pedro Palavra", position: "Vogal", imageUrl: 'pedropalavra.jpg', sector: "Administração Interna", curso:"Licenciatura em Design" },
-    { name: "Gonçalo Marques", position: "Presidente", imageUrl: 'Goncalo.jpg', sector: "MAG", curso:"Mestrado em Engenharia Química- Processos Quimicos" },
-    { name: "Nânci Marques", position: "Vice-Presidente", imageUrl: 'magnanci.jpg', sector: "MAG", curso:"Mestrado em Engenharia Geológica" },
-    { name: "Matilde Pinho", position: "Vogal", imageUrl: 'matildepinho-1.jpg', sector: "Comunicação e Imagem", curso:"Licenciatura em engenharia de materiais " },
-    { name: "Fábio Yu Chen", position: "Presidente", imageUrl: 'fabyo.jpg', sector: "CFJ", curso:"Mestrado em Ecotoxicologia e Análise de Risco" },
-    { name: "Miguel Martins", position: "Vice-Presidente", imageUrl: 'migueçmartins.jpg', sector: "CFJ", curso:"Mestrado em Engenharia Informática" },
-    { name: "Inês Filipe", position: "1.º Secretaria", imageUrl: 'inesfilipa.jpg', sector: "MAG", curso:"Licenciatura em Matemática " },
-    { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" , curso:"Licenciatura em Fisioterapia "},
-    { name: "José Pontes", position: "3.º Secretário", imageUrl: 'pontes.jpg', sector: "MAG", curso:"Mestrado Integrado em Engenharia Civil" },
-    { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "CFJ" , curso:"Licenciatura em Engenharia do Ambiente"},
-    { name: "Tomás Oliveira", position: "Vogal", imageUrl: 'tomas.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Engenharia Química" },
-    { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "CFJ", curso:"Licenciatura em Design de Produto e Tecnologia" },
-    { name: "Bruna Costa", position: "1.º Secretaria", imageUrl: 'bruna.jpg', sector: "CFJ", curso: "Mestrado em Marketing (PL)" },
+    { name: "Carolina Vila Maior", position: "Vice-Presidente", imageUrl: 'vilamaior.jpg', sector: "Política Educativa", curso:"Licenciatura em Biotecnologia", linkedin:"https://www.linkedin.com/in/carolinavilamaior?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
+    { name: "Pedro Rei", position: "Vogal", imageUrl: 'rei.jpg', sector: "Política Educativa", curso:"Licenciatura em Engenharia Informática", linkedin:"https://www.linkedin.com/in/pedro-rei-208a3226a/"},
+    { name: "Bianca Ramos", position: "Vogal", imageUrl: 'bainca.jpg', sector: "Política Educativa" , curso:"Licenciatura em Contabilidade", linkedin:""},
+    { name: "Wilson do Carmo", position: "Presidente", imageUrl: 'wison.jpg', sector: "Presidência", curso:"Mestrado em Ciências Biomédicas/Mestrado em Gestão", linkedin:"" },
+    { name: "Margarida Cordeiro", position: "Vice-Presidente", imageUrl: 'Margarida Cordeiro.jpg', sector: "Aveiro é Nosso", curso:"Mestrado em Línguas e Relações Empresariais", linkedin:"" },
+    { name: "Francisco Silveira", position: "Vice-Presidente", imageUrl: 'franciscosilveir-1.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Ciências do Mar e da Atmosfera", linkedin:"" },
+    { name: "Joana Regadas", position: "Vice-Presidente Adjunta", imageUrl: 'regadas.jpg', sector: "Presidência", curso:"Mestrado em Engenharia Biomédica", linkedin:"" },
+    { name: "Paulo Judite", position: "Tesoureiro", imageUrl: 'judite.jpg', sector: "Presidência", curso:"Mestrado em Economia" , linkedin:""},
+    { name: "Pedro Cruz", position: "Vice-Presidente", imageUrl: 'pedrocruz___-1.jpg', sector: "Comunicação e Imagem", curso:"Mestrado em Audiovisual e Novos Média" , linkedin:"https://www.linkedin.com/in/pedrolbpcruz/"},
+    { name: "João Cruz", position: "Tesoureiro Adjunto", imageUrl: 'joaocruz.jpg', sector: "Presidência" , curso:"Mestrado Integrado em Engenharia Mecânica", linkedin:""},
+    { name: "Gustavo Oliveira", position: "Secretário Geral", imageUrl: 'gustavo.jpg', sector: "Presidência", curso:"Mestrado em Assessoria de Direção e Comunicação nas Organizações", linkedin:"" },
+    { name: "Carolina Alberto", position: "Administradora", imageUrl: 'carolinaalberto.jpg', sector: "Presidência", curso:"Mestrado em Engenharia Biomédica", linkedin:"" },
+    { name: "Andreia Novais", position: "Vogal", imageUrl: 'Andreia Novais.jpg', sector: "Aveiro é Nosso", curso:"Mestrado em Gestão da Investigação Clínica" , linkedin:"https://www.linkedin.com/in/andreia22novais"},
+    { name: "Guilherme Freitas", position: "Vice-Presidente", imageUrl: 'Guilherme Freitas.jpg', sector: "Apoio aos Núcleos", curso:"Mestrado em Engenharia Química", linkedin:"" },
+    { name: "Maria Ferreira", position: "Vogal", imageUrl: 'Maria Ferreira.jpg', sector: "Apoio aos Núcleos", curso:"Mestrado em Gestão e Planeamento em Turismo", linkedin:"" },
+    { name: "Lénia Ferreira", position: "Vogal", imageUrl: 'lenia.jpg', sector: "Apoio aos Núcleos", curso:"Mestrado em Ensino de Matemátia 3ºCEB e Secundário", linkedin:"" },
+    { name: "Joana Ferreira", position: "Vogal", imageUrl: 'Joana Ferreira.jpg', sector: "Aveiro é Nosso", curso:"Licenciatura em Educação Básica", linkedin:"" },
+    { name: "Joana Aleixo", position: "Vogal", imageUrl: 'joanaaleixo-1.jpg', sector: "Comunicação e Imagem", curso:"Administração Pública", linkedin:"" },
+    { name: "Matilde Ferreira", position: "Vogal", imageUrl: 'matildepreto-1.jpg', sector: "Comunicação e Imagem", curso:"Licenciatura em Multimédia e Tecnologias da Comunicação", linkedin:"" },
+    { name: "Lucas Matos", position: "Vice-Presidente", imageUrl: 'lucasmatos.jpg', sector: "Administração Interna" , curso:"Mestrado Integrado em Engenharia de Computadores e Telemática" , linkedin:""},
+    { name: "Hugo Oliveira", position: "Vogal", imageUrl: 'hugooliveira.jpg', sector: "Administração Interna", curso:"Mestrado em Engenharia Mecânica" , linkedin:"https://www.linkedin.com/in/hugo-oliveira-276aba175?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"},
+    { name: "Juan Carpintero", position: "Vogal", imageUrl: 'juan.jpg', sector: "Administração Interna", curso:"Licenciatura em Engenharia de Computadores e Informática", linkedin:"" },
+    { name: "Pedro Rocha", position: "Vice-Presidente", imageUrl: 'pedrorocha-1.jpg', sector: "Cultura" , curso:"Mestrado em Engenharia de Computadores e Telemática", linkedin:""},
+    { name: "Maria Ferreira", position: "Vogal", imageUrl: 'mariaferreira-1.jpg', sector: "Cultura", curso:"Licenciatura em Gestão" , linkedin:""},
+    { name: "Leonardo Salazar", position: "Vogal", imageUrl: 'leo-1.jpg', sector: "Cultura", curso:"Licenciatura em Fisioterapia", linkedin:"" },
+    { name: "Luzia Ferreira", position: "Vogal", imageUrl: 'luzia.jpg', sector: "Desporto e Bem Estar", curso:"Licenciatura em Engenharia e Gestão Industrial", linkedin:"" },
+    { name: "Pedro Palavra", position: "Vogal", imageUrl: 'pedropalavra.jpg', sector: "Administração Interna", curso:"Licenciatura em Design", linkedin:"" },
+    { name: "Gonçalo Marques", position: "Presidente", imageUrl: 'Goncalo.jpg', sector: "MAG", curso:"Mestrado em Engenharia Química- Processos Quimicos", linkedin:"" },
+    { name: "Nânci Marques", position: "Vice-Presidente", imageUrl: 'magnanci.jpg', sector: "MAG", curso:"Mestrado em Engenharia Geológica" , linkedin:"https://www.linkedin.com/in/n%C3%A2nci-jesus/"},
+    { name: "Matilde Pinho", position: "Vogal", imageUrl: 'matildepinho-1.jpg', sector: "Comunicação e Imagem", curso:"Licenciatura em engenharia de materiais " , linkedin:""},
+    { name: "Fábio Yu Chen", position: "Presidente", imageUrl: 'fabyo.jpg', sector: "CFJ", curso:"Mestrado em Ecotoxicologia e Análise de Risco", linkedin:"https://www.linkedin.com/in/f%C3%A1bio-c-a75a06b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app;" },
+    { name: "Miguel Martins", position: "Vice-Presidente", imageUrl: 'migueçmartins.jpg', sector: "CFJ", curso:"Mestrado em Engenharia Informática", linkedin:"" },
+    { name: "Inês Filipe", position: "1.º Secretaria", imageUrl: 'inesfilipa.jpg', sector: "MAG", curso:"Licenciatura em Matemática ", linkedin:"" },
+    { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "MAG" , curso:"Licenciatura em Fisioterapia ", linkedin:""},
+    { name: "José Pontes", position: "3.º Secretário", imageUrl: 'pontes.jpg', sector: "MAG", curso:"Mestrado Integrado em Engenharia Civil" , linkedin:""},
+    { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "CFJ" , curso:"Licenciatura em Engenharia do Ambiente", linkedin:""},
+    { name: "Tomás Oliveira", position: "Vogal", imageUrl: 'tomas.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Engenharia Química", linkedin:"" },
+    { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "CFJ", curso:"Licenciatura em Design de Produto e Tecnologia", linkedin:"" },
+    { name: "Bruna Costa", position: "1.º Secretaria", imageUrl: 'bruna.jpg', sector: "CFJ", curso: "Mestrado em Marketing (PL)", linkedin:"" },
 
 
 
@@ -57,17 +57,20 @@ function filterSelection(sector) {
                 if (member.sector === sec) {
                     const cardHtml = `
                     <div class="col-sm-6 col-md-4 mb-4 d-inline">
-                        <div class="row d-flex justify-content-center">
-                            <div class="card w-75">
-                                <img src="${member.imageUrl}" class="card-img-top" alt="${member.name}">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>${member.name}</strong></h5>
-                                    <p class="card-text">${member.position}</p>
-                                    <p class="card-text">${member.curso}</p>
-                                </div>
-        </div>
-    </div>                  
-</div>                  
+        <div class="row d-flex justify-content-center">
+            <div class="card w-75">
+                <img src="${member.imageUrl}" class="card-img-top" alt="${member.name}">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title"><strong>${member.name}</strong></h5>
+                        ${member.linkedin ? `<a href="${member.linkedin}" target="_blank" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>` : ''}
+                    </div>
+                    <p class="card-text">${member.position}</p>
+                    <p class="card-text">${member.curso}</p>
+                </div>
+            </div>
+        </div>                  
+    </div>                
 
                     `;
                     container.innerHTML += cardHtml;
@@ -79,19 +82,21 @@ function filterSelection(sector) {
         teamMembers.forEach(member => {
             if (member.sector === sector) {
                 const cardHtml = `
-                    <div class=" col-sm-6 col-md-4 mb-4 d-inline">
-                    <div class="row d-flex justify-content-center">
-                        <div class="card w-75">
-                            <img src="${member.imageUrl}" class="card-img-top" alt="${member.name}">
-                            <div class="card-body">
-                            <h5 class="card-title"><strong>${member.name}</strong></h5>
+                <div class="col-sm-6 col-md-4 mb-4 d-inline">
+                <div class="row d-flex justify-content-center">
+                    <div class="card w-75">
+                        <img src="${member.imageUrl}" class="card-img-top" alt="${member.name}">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title"><strong>${member.name}</strong></h5>
+                                ${member.linkedin ? `<a href="${member.linkedin}" target="_blank" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>` : ''}
+                            </div>
                             <p class="card-text">${member.position}</p>
-                                <p class="card-text">${member.curso}</p>
-
-                            </div>
-                            </div>
+                            <p class="card-text">${member.curso}</p>
                         </div>
                     </div>
+                </div>                  
+            </div>   
                 `;
                 container.innerHTML += cardHtml;
             }
