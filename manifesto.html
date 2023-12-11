@@ -13,44 +13,103 @@
     <title>Lista A - Manifesto</title>
 </head>
 <style>
-    .navbar-toggle {
-        cursor: pointer;
-        display: inline-block;
-    }
-  
-    .top-bar, .middle-bar, .bottom-bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: black;
-        margin: 5px 0;
-        transition: all 0.3s ease;
-    }
-  
-    /* Transformations for the open state */
-    .navbar-toggler.open .top-bar {
-        transform: translateY(8px) rotate(45deg);
-    }
-  
-    .navbar-toggler.open .middle-bar {
-        opacity: 0;
-    }
-  
-    .navbar-toggler.open .bottom-bar {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    @media screen and (min-width: 769px) {
-    .navbar-toggle {
-      display: none;
-    }
+   .navbar-toggle {
+      cursor: pointer;
+      display: inline-block;
   }
+
+  .top-bar, .middle-bar, .bottom-bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+  }
+
+  /* Transformations for the open state */
+  .navbar-toggler.open .top-bar {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggler.open .middle-bar {
+      opacity: 0;
+  }
+
+  .navbar-toggler.open .bottom-bar {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Set the maximum height for the image within the carousel */
+  .max-height-carousel {
+  max-height: 400px; /* Adjust the maximum height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the caption's position */
+   .carousel-caption {
+  bottom: 0;
+}
+
+
+.carousel-item img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without stretching */
+}
+
+  .container {
+    display: flex;
+    justify-content: center; /* Centers the carousel horizontally */
+    align-items: center; /* Centers the carousel vertically */
+    flex-direction: column; /* Stacks items vertically */
+    max-width: 100%; /* Ensures container does not exceed the width of its parent */
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%; /* Sets the carousel to fill the width of its container */
+    max-width: 900px; /* Adjusts maximum width of the carousel as needed */
+    margin: auto; /* Ensures the carousel is centered within its container */
+  }
+
+  /* Increased top margin for larger screens */
+  @media screen and (min-width: 769px) {
+  .logo {
+    order: 1;
+  }
+
+  .main-nav {
+    order: 2;
+    position: static;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .nav-links {
+    padding: 14px 16px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
   /* Padding for mobile screens */
   @media screen and (max-width: 768px) {
     .navbar-toggle {
       display: inline-block;
     }
   }
+
   </style>
 <body>
   <nav class="navbar">
