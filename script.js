@@ -38,7 +38,6 @@ const teamMembers = [
     { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "Conselho Fiscal e de Jurisdição" , curso:"Licenciatura em Engenharia do Ambiente", linkedin:""},
     { name: "Tomás Oliveira", position: "Vogal", imageUrl: 'tomas.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Engenharia Química", linkedin:"" },
     { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "Conselho Fiscal e de Jurisdição", curso:"Licenciatura em Design de Produto e Tecnologia", linkedin:"" },
-    { name: "Bruna Costa", position: "1.º Secretaria", imageUrl: 'bruna.jpg', sector: "Conselho Fiscal e de Jurisdição", curso: "Mestrado em Marketing (PL)", linkedin:"" },
 
 
 
