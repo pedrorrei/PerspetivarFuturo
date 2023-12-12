@@ -34,6 +34,7 @@ const teamMembers = [
     { name: "Miguel Martins", position: "Vice-Presidente", imageUrl: 'migueçmartins.jpg', sector: "Conselho Fiscal e de Jurisdição", curso:"Mestrado em Engenharia Mecânica", linkedin:"" },
     { name: "Joaquim Esteves", position: "2.º Secretário", imageUrl: 'joaquim.jpg', sector: "Mesa da Assembleia Geral" , curso:"Licenciatura em Fisioterapia ", linkedin:""},
     { name: "José Pontes", position: "3.º Secretário", imageUrl: 'pontes.jpg', sector: "Mesa da Assembleia Geral", curso:"Mestrado Integrado em Engenharia Civil" , linkedin:""},
+    { name: "Bruna Costa", position: "1.º Secretaria", imageUrl: 'bruna.jpg', sector: "Conselho Fiscal e de Jurisdição", curso: "Mestrado em Marketing (PL)", linkedin:"" },
     { name: "Joana Pinho", position: "2° Secretária", imageUrl: 'joana.jpg', sector: "Conselho Fiscal e de Jurisdição" , curso:"Licenciatura em Engenharia do Ambiente", linkedin:""},
     { name: "Tomás Oliveira", position: "Vogal", imageUrl: 'tomas.jpg', sector: "Desporto e Bem Estar", curso:"Mestrado em Engenharia Química", linkedin:"" },
     { name: "Eduardo Pires", position: "Relator", imageUrl: 'pires.jpg', sector: "Conselho Fiscal e de Jurisdição", curso:"Licenciatura em Design de Produto e Tecnologia", linkedin:"" },
