@@ -16,6 +16,14 @@
 </head>
 <style>
 
+.footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .linkedin-icon {
     color: #0077b5; /* LinkedIn brand color */
     font-size: 30px; /* Increased font size for a larger icon */
@@ -88,8 +96,8 @@
 
 
 
-.nav-links:hover {
-    color: rgb(164, 164, 164) !important; /* Replace with your desired hover color */
+  .nav-links:hover {
+    color: rgb(79, 185, 168) !important; /* Replace with your desired hover color */
     text-decoration: none; /* Optional: Removes the underline effect on hover */
 }
 
@@ -147,6 +155,13 @@
   .navbar-toggle {
     display: none;
   }
+
+  
+}
+.my-custom-button {
+    background-color: rgb(79, 185, 168) !important; /* Replace with your desired color */
+    border-color: whitesmoke !important; /* Optional: if you want a specific border color */
+    box-shadow: none !important; /* Optional: if you don't want the button to be focused after clicking */
 }
   /* Padding for mobile screens */
   @media screen and (max-width: 768px) {
@@ -182,7 +197,7 @@
       <div class="row">
           <div class="col-12 d-flex justify-content-center mb-3">
               <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="btn btn-secondary my-custom-button dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Selecione o Sector
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -195,7 +210,7 @@
                       <li><a class="dropdown-item" href="#" onclick="filterSelection('Desporto e Bem Estar')">Desporto e Bem Estar</a></li>
                       <li><a class="dropdown-item" href="#" onclick="filterSelection('Apoio aos Núcleos')">Apoio aos Núcleos</a></li>
                       <li><a class="dropdown-item" href="#" onclick="filterSelection('Comunicação e Imagem')">Comunicação e Imagem</a></li>
-                      <li><a class="dropdown-item" href="#" onclick="filterSelection('Conselho Fiscal e de Jurisdição')">Conselho Fiscal e de Jurisdiçãogi</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="filterSelection('Conselho Fiscal e de Jurisdição')">Conselho Fiscal e de Jurisdição</a></li>
                       <li><a class="dropdown-item" href="#" onclick="filterSelection('Mesa da Assembleia Geral')">Mesa da Assembleia Geral</a></li>
 
 
@@ -212,8 +227,8 @@
 
   </section>
 
-  <footer>
-    <p>Lista A AAUAv 2024</p>
+  <footer class="footer">
+    Lista A AAUAv 2024
 </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
