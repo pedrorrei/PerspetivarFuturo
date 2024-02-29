@@ -22,7 +22,7 @@ const teamMembers = [
     { name: "Hugo Oliveira", position: "Vogal", imageUrl: 'hugooliveira.jpg', sector: "Administração Interna", curso:"Mestrado em Engenharia Mecânica" , linkedin:"https://www.linkedin.com/in/hugo-oliveira-276aba175?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"},
     { name: "Juan Carpintero", position: "Vogal", imageUrl: 'juan.jpg', sector: "Administração Interna", curso:"Licenciatura em Engenharia de Computadores e Informática", linkedin:"" },
     { name: "Pedro Rocha", position: "Vice-Presidente", imageUrl: 'pedrorocha-1.jpg', sector: "Cultura" , curso:"Mestrado em Engenharia de Computadores e Telemática", linkedin:""},
-    { name: "Maria Ferreira Moreira Ferreira Rei", position: "Vogal", imageUrl: 'mariaferreira-1.jpg', sector: "Cultura", curso:"Licenciatura em Gestão" , linkedin:""},
+    { name: "Maria Ferreira", position: "Vogal", imageUrl: 'mariaferreira-1.jpg', sector: "Cultura", curso:"Licenciatura em Gestão" , linkedin:""},
     { name: "Leonardo Salazar", position: "Vogal", imageUrl: 'leo-1.jpg', sector: "Cultura", curso:"Licenciatura em Fisioterapia", linkedin:"" },
     { name: "Luzia Ferreira", position: "Vogal", imageUrl: 'luzia.jpg', sector: "Desporto e Bem Estar", curso:"Licenciatura em Engenharia e Gestão Industrial", linkedin:"https://www.linkedin.com/in/luzia-ferreira-431383a3/" },
     { name: "Pedro Palavra", position: "Vogal", imageUrl: 'pedropalavra.jpg', sector: "Administração Interna", curso:"Licenciatura em Design", linkedin:"" },
